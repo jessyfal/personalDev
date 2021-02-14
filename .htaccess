@@ -1,4 +1,4 @@
-RewriteEngine on
-RewriteRule ^/$ /fr/
+RewriteEngine On
+RewriteRule ^$ /fr/ [L]
 
 ErrorDocument 404 "<html><body style='background-color: orange;'><h1 style='text-align: center;'>ERREUR 404</h1></body></html>"
