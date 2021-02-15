@@ -5,10 +5,16 @@ body {
 
 html {
     background: rgb(104,109,224);
-    background: -moz-linear-gradient(135deg, rgba(104,109,224,1) 0%, rgba(224,86,253,1) 85%);
-    background: -webkit-linear-gradient(135deg, rgba(104,109,224,1) 0%, rgba(224,86,253,1) 85%);
-    background: linear-gradient(135deg, rgba(104,109,224,1) 0%, rgba(224,86,253,1) 85%);
+    background: -moz-linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 25%, rgba(224,86,253,1) 85%);
+    background: -webkit-linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 25%, rgba(224,86,253,1) 85%);
+    background: linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 25%, rgba(224,86,253,1) 85%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#686de0",endColorstr="#e056fd",GradientType=1);
+    background-size: 200% !important;
+    background-position: 40%;
+
+    -webkit-animation: animationFond 10s cubic-bezier(.45,.05,.55,.95) infinite;
+    -moz-animation: animationFond 10s cubic-bezier(.45,.05,.55,.95) infinite;
+    animation: animationFond 10s cubic-bezier(.45,.05,.55,.95) infinite;
 }
 
 #construction {
@@ -26,4 +32,22 @@ html {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+
+
+@-webkit-keyframes animationFond {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes animationFond {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@keyframes animationFond {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
 }
