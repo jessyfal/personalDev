@@ -1,24 +1,12 @@
 body {
-    height: 100vh;
     margin: 0;
 }
 
-
 html {
     background: rgb(104,109,224);
-    background: -moz-linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 50%, rgba(224,86,253,1) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 50%, rgba(224,86,253,1) 100%);
-    background: linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 50%, rgba(224,86,253,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#686de0",endColorstr="#e056fd",GradientType=1);
-    background-size: 200% !important;
-    background-position: 50%;
-    background-attachment: fixed;
-
-    -webkit-animation: animationFond 10s cubic-bezier(.45,.05,.55,.95) infinite;
-    -moz-animation: animationFond 10s cubic-bezier(.45,.05,.55,.95) infinite;
+    background: fixed linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 50%, rgba(224,86,253,1) 100%) 50% / 200%;
     animation: animationFond 10s cubic-bezier(.45,.05,.55,.95) infinite;
 }
-
 
 
 /*HEADER - MAIN*/
@@ -28,8 +16,7 @@ html {
 }
 
 .h1-main-titre {
-    color: black;
-    opacity: 0.35;
+    color: rgba(0, 0, 0, 0.6);
 
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 7.5vw;
@@ -54,14 +41,61 @@ html {
 #article-main-right {
     margin-left: 50vw;
     color: white;
+    font-family: sans-serif;
+}
+
+#h3-main-description {
+    text-align: center;
+    font-size: 1.3vw;
+
+    width: 34vw;
+    position: absolute;
+    bottom: 52.5vh;
+    left: 58vw;
 }
 
 #hr-main {
     background-color: white;
-    border: unset;
-    height: 0.2vh;
+    border: 0.2vh transparent solid;
+
+    height: 0.1vh;
+    width: 35vw;
+    border-radius: 3vh;
+
+    position: absolute;
+    bottom: 50vh;
+    left: 57.5vw;
 }
 
+#btn-main-contact {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 1.5vh;
+
+    padding: 0;    
+    cursor: pointer;
+
+    color: white;
+    font-size: 1.5vw;
+
+    height: 7vh;
+    width: 15vw;
+
+    position: absolute;
+    top: 51vh;
+    left: 67.5vw;
+}
+
+#div-main-social {
+    position: absolute;
+    top: 64vh;
+    left: 56.5vw;
+}
+
+.img-main-social {
+    width: 3vw;
+    margin-left: 5vw;
+}
 
 
 /*DIV - SCROLL*/
@@ -103,16 +137,7 @@ html {
 
 
 
-@-webkit-keyframes animationFond {
-    0%{background-position:0% 0%}
-    50%{background-position:100% 100%}
-    100%{background-position:0% 0%}
-}
-@-moz-keyframes animationFond {
-    0%{background-position:0% 0%}
-    50%{background-position:100% 100%}
-    100%{background-position:0% 0%}
-}
+
 @keyframes animationFond {
     0%{background-position:0% 0%}
     50%{background-position:100% 100%}
