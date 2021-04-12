@@ -10,6 +10,30 @@ html {
 
 
 /*HEADER - MAIN*/
+#header-main {
+    height: 100vh;
+}
+
+/* NAV - MAIN */
+#nav-main {
+    width: 15vw;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    float: right;
+
+    padding-right: 3vw;
+    border-radius: 1vh;
+}
+
+.img-main-nav {
+    width: 3vw;
+
+    float: right;
+    margin-left: 1vw;
+}
+
+
 /*ARTICLE - LEFT */
 #article-main-left {
     width: 50vw;
@@ -103,7 +127,7 @@ html {
     width: 5vh;
     height: 9vh;
 
-    border: 0.2vh rgba(255,255,255,0.8) solid;
+    border: 0.4vh white solid;
     border-radius: 2vh;
 
     position: absolute;
@@ -127,6 +151,34 @@ html {
 }
 
 
+/*SECTION-MAIN*/
+#section-main {
+    width: 94vw;
+    margin: auto;
+
+    mix-blend-mode: screen;
+}
+/*SVG-MAIN*/
+#svg-main {
+    height: 30vh;
+    width: 94vw;
+
+    display: block;
+}
+
+#article-projets {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#h2-main {
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 3vw;
+    color: black;
+}
+
 
 
 
@@ -149,4 +201,3 @@ html {
     100%{opacity: 0;
         transform: translateY(5vh)}
 }
-  
