@@ -1,16 +1,29 @@
-body {
-    margin: 0;
-}
-
 html {
     background: rgb(104,109,224);
     background: fixed linear-gradient(135deg, rgba(126, 214, 223,1.0) 0%, rgba(104,109,224,1) 50%, rgba(224,86,253,1) 100%) 50% / 200%;
     animation: animationFond 10s cubic-bezier(.45,.05,.55,.95) infinite;
+
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: rgba(104,109,224,1) rgba(0,0,0,1);
+}
+
+body {
+    margin: 0;  
 }
 
 
+*::-webkit-scrollbar {
+    width: 0.5vw;
+}  
+*::-webkit-scrollbar-track {
+    background:  rgba(0,0,0,1);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(104,109,224,1);
+}
+
 /*HEADER - MAIN*/
-#header-main {
+#header-main {                                
     height: 100vh;
 }
 
